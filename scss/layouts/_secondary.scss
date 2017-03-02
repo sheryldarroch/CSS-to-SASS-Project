@@ -1,0 +1,35 @@
+.sec {
+  @include display(0, 0);
+  background-color: $pink-lace;
+}
+
+#contact {
+  @extend %t-border;
+  p {
+    @include bp(medium) {
+      @include display(null, 0 40px);
+    }
+    @include bp(large) {
+      max-width: 60%;
+      margin: 0 auto;
+    }
+  }
+}
+
+#skills {
+  @extend %t-border;
+  margin-top: 40px;
+}
+
+.skills-list {
+  @include bp(medium) {
+    display: flex;
+    justify-content: center;
+  }
+  li {
+    @include display(0 10px 20px 10px, 5px 15px);
+    color: $fresh-eggplant;
+    background: complement($pink-lace);
+    border-radius: 5px;
+  }
+}

@@ -1,0 +1,37 @@
+// Main layout styles
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  @include display(0, 0);
+  @include fonts(null, $color: $mine-shaft);
+  text-align: center;
+  font-family: $font--primary;
+  @include bp(large) {
+    @include fonts(1.25em);
+  }
+}
+
+h1,
+h2,
+h3 {
+  font-family: $font--secondary;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Link Styles */
+
+a {
+  @include fonts(null, $color: $mine-shaft);
+  text-decoration: none;
+  :hover {
+    @include fonts(null, $fresh-eggplant, 700);
+    border-bottom: solid 2px $fresh-eggplant;
+    transition: border 5s;
+  }
+}

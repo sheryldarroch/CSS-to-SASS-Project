@@ -1,0 +1,39 @@
+// Font variables
+
+$font--primary: 'Raleway', 'sans-serif';
+$font--secondary: 'Josefin Slab', 'serif';
+
+// Color variables
+
+$fresh-eggplant: #800080;
+$pink-lace: #ffe6ff;
+$mine-shaft: #333;
+$cream: #ffffcc;
+
+// Media Query Variables
+
+$bp-medium: 768px;
+$bp-large: 1024px;
+
+
+// Nav Placeholder
+
+%nav {
+  background-color: $cream;
+  padding: 10px;
+  margin: 5px 0;
+}
+
+//Top Border Placeholder
+%t-border {
+  border-top: solid 2px $fresh-eggplant;
+}
+
+// Flexbox Placeholder for Medium Breaking Point
+%flex {
+ @media screen and (min-width: $bp-medium) {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}

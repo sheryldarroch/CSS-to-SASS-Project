@@ -1,0 +1,35 @@
+ footer {
+  @extend %t-border;
+  @include display(0, 10px, flex);
+  background-color: $pink-lace;
+  justify-content: space-between;
+  @include bp(medium) {
+    @extend %flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }  
+}
+
+.footer-nav {
+  visibility: hidden;
+  @include bp(medium) {
+    @extend %flex; 
+    visibility: visible;
+  }
+  li {
+    @extend %nav;
+  }
+}
+
+#bottom {
+  @include bp(medium) {
+    display: none;
+  }
+}
+
+.footer-name {
+  @include bp(medium) {
+    margin-right: auto;
+  }
+}
+

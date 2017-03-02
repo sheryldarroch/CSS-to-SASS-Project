@@ -1,0 +1,42 @@
+.main-header {
+  @include display(0, 10px);
+  background-color: $pink-lace;
+  @include bp(medium) {
+    @include display(null, 30px 0);
+  }
+}
+
+.name {
+  @include fonts(null, $color: $fresh-eggplant);
+}
+
+.header {
+  @include bp(medium) {
+    @extend %flex;
+    flex-direction: row-reverse;
+  }
+  @include bp(large) {
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  p {
+    @include bp(medium) {
+      max-width: 60%;
+    }
+    @include bp(large) {
+      text-align: left;
+      padding-left: 40px;
+    }
+  }
+}
+
+.profile-image {
+  @include display(40px 0 10px 0, null);
+  border-radius: 100%;
+  box-shadow: 0 0 50px $fresh-eggplant;
+  width: 200px;
+  @include bp(large) {
+    width: 400px;
+    margin-right: 80px;
+  }
+}
