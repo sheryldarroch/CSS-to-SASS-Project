@@ -1,3 +1,8 @@
+//Top Border Placeholder
+%t-border {
+  border-top: solid 2px $fresh-eggplant;
+}
+
 .main {
   @extend %t-border;
 }
