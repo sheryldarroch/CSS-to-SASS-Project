@@ -5,6 +5,14 @@
   }
 } 
 
+// Nav Placeholder
+
+%nav {
+  background-color: $cream;
+  padding: 10px;
+  margin: 5px 0;
+}
+
 .nav {
   @include bp(medium) {
   @extend %flex;

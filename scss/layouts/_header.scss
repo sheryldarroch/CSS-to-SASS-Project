@@ -1,3 +1,12 @@
+// Flexbox Placeholder for Medium Breaking Point
+%flex {
+ @media screen and (min-width: $bp-medium) {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
 .main-header {
   @include display(0, 10px);
   background-color: $pink-lace;
